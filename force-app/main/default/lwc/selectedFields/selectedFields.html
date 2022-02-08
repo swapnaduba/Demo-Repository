@@ -1,0 +1,9 @@
+<template>
+    <label>Selected Fields</label>
+    <select multiple class="slds-select" name="optionSelect" size="10" >
+        <template for:each={retrievedFields} for:item="field">
+            <option key={field} value={field} onclick={removeSelect}>{field}</option>
+        </template>
+    </select >
+    <button title="Rem" onclick={removeFields}></button>    
+</template>
